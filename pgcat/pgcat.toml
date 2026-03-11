@@ -78,9 +78,8 @@ default_role = "replica"
 query_parser_enabled = true
 query_parser_read_write_splitting = true
 
-# Do NOT send reads to primary
-# (equivalent to pgpool backend_weight0 = 0)
-primary_reads_enabled = false
+# Allow reads to fall back to primary when all replicas are down
+primary_reads_enabled = true
 
 # Sharding function (required but we only have 1 shard)
 sharding_function = "pg_bigint_hash"
