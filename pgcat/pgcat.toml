@@ -76,7 +76,7 @@ default_role = "replica"
 
 # Enable query parser for read/write splitting
 query_parser_enabled = true
-query_parser_read_write_splitting = true
+query_parser_read_write_splitting = false
 
 # Allow reads to fall back to primary when all replicas are down
 primary_reads_enabled = true
